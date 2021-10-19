@@ -1,4 +1,4 @@
-# Getting Started with Create React App
+# React App Cumul Test
 
 ### Installing dependences: `npm install`
 
