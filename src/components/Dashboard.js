@@ -5,10 +5,13 @@ import {
 } from "react-cumulio";
 
 function Dashboard({ssoId, ssoToken, dashboardId=null}) {
+  useEffect(()=> {
+    console.log(ssoId);console.log(ssoToken);console.log(dashboardId)
+  },[])
     return  ssoToken ? <CumulioComponent
         dashboardId={dashboardId}
         authKey={ssoId}
-        authToken={ssoToken}
+        authToken={ssoToken}appServer = "https://app.us.cumul.io/"
 
         loaderBackground="rgb(238, 243, 246)"
         loaderFontColor="rgb(0, 45, 112)"
